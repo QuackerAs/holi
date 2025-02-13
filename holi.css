@@ -1,0 +1,69 @@
+body {
+  background-color: hsl(24, 89%, 85%);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+  font-family: "Acme", serif;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: absolute;
+  border-radius: 10px;
+  border: 1px, dashed;
+}
+
+#trigger {
+  background-color: hsl(0, 15%, 74%);
+  color: #817a8a;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+  font-family: "Acme", serif;
+}
+
+#growing {
+  background-color: hsl(18, 62%, 80%);
+  color: #817a8a;
+  transform-origin: center;
+  z-index: 1;
+  min-width: 200px;
+  font-family: "Acme", serif;
+}
+
+.new-screen {
+  background-image: url("./cutecore-patternwith-adorable-characters-hgoggc8msu5e4491.jpg");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(24, 89%, 85%);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: hsl(117, 91%, 9%);
+  font-size: 40px;
+  z-index: 999;
+  transition: opacity 0.5s ease;
+}
+
+.new-screen.visible {
+  display: flex;
+  opacity: 1;
+  flex-direction: column;
+}
+
+
